@@ -1,0 +1,37 @@
+.action-button{
+  background-color: yellow;
+}
+.container {
+  .section {
+    background-color: #fff;
+    &:not(:first-child) {
+      border-top: solid #e5e5e5 1px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+      border-bottom: solid #e5e5e5 1px;
+    }
+  }
+  .swiper-contanier {
+    height: 280px;
+    overflow: hidden;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .hotGame.section {
+    overflow: hidden;
+    border-top: none;
+    .hr {
+      width: 610px;
+      height: 1px;
+      line-height: 1px;
+      border-top: solid #e5e5e5 1px;
+      margin-left: 30px;
+      color: #e5e5e5;
+    }
+  }
+  .section.hotNews {
+    margin-bottom: 99px;
+    border-bottom: none;
+  }
+}

@@ -22,6 +22,18 @@
 ? Setup e2e tests with Nightwatch? Yes
 ```
 
+## 方案选择
+* 布局方案：使用网易方案（直接处理根目录，控制大小）
+* 强制使用360浏览器技术急速模式
+* 如果是ie，强制最高版本ie
+
+## 项目要求
+* Android 4+
+* IOS 7+
+* 微信
+* 桌面主流浏览器
+* 尽量不使用其他库
+
 ## Build Setup
 
 ``` bash

@@ -29,6 +29,7 @@
 * ajax方案：使用axios
 * px方案：使用 postcss-pxtorem
 * css方案：使用 sass
+* 文件命名方案： 驼峰式
 
 ## 项目要求
 * Android 4+

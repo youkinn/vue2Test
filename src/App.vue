@@ -7,8 +7,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'app',
-};
-</script>
+<script src="./App.js"></script>
+<style lang="scss" src="./App.scss"></style>
+

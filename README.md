@@ -26,6 +26,9 @@
 * 布局方案：使用网易方案（直接处理根目录，控制大小）
 * 强制使用360浏览器技术急速模式
 * 如果是ie，强制最高版本ie
+* ajax方案：使用axios
+* px方案：使用 postcss-pxtorem
+* css方案：使用 sass
 
 ## 项目要求
 * Android 4+

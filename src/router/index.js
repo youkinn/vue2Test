@@ -32,7 +32,7 @@ export default new Router({
         require.ensure(
           [],
           () => {
-            resolve(require('../pages/home/home/homePage.vue'));
+            resolve(require('../pages/home/home.vue'));
           },
           'home',
         );

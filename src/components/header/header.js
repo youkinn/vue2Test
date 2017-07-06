@@ -1,3 +1,6 @@
+/**
+ * 本组件是通用带导航头部
+ */
 export default {
   props: {
     sActiontext: {

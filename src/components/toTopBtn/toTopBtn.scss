@@ -1,0 +1,17 @@
+.action-button {
+    position: fixed;
+    right: 30px;
+    bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    opacity: 0.4;
+    color: #fff;
+    background-color: #000;
+    i {
+        font-size: 40px;
+    }
+}

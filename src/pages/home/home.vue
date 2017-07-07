@@ -13,9 +13,9 @@
       <div class="hotNewsContainer">
         <hot-news-component :o-news="news"></hot-news-component>
       </div>
-    </div>
+    </div>-->
     <back-to-top-component></back-to-top-component>
-    <app-footer-component></app-footer-component>-->
+    <app-footer-component></app-footer-component>
   </div>
   <fading-circle-compontent v-else></fading-circle-compontent>
 </template>

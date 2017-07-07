@@ -4,7 +4,7 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 
-require('es6-promise/auto');
+require('es6-promise/auto');// 为了兼容老版本浏览器
 
 Vue.config.productionTip = false;
 

@@ -4,4 +4,4 @@
   </div>
 </template>
 <script src="./toTopBtn.js"></script>
-<style lang="scss" src="./toTopBtn.scss"></style>
+<style lang="scss" scoped src="./toTopBtn.scss"></style>

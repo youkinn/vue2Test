@@ -5,6 +5,7 @@ import backToTopComponent from '../../components/toTopBtn/toTopBtn.vue';
 import headerComponent from './header.vue';
 import sliderComponent from './slider.vue';
 import hotGameComponent from './hotGame.vue';
+import { getSwiperList } from '../../http/home';
 
 export default {
   components: {
@@ -19,7 +20,7 @@ export default {
   data() {
     return {
       title: '首页',
-      swiper: {},
+      swiperList: [],
       news: {},
       activated: false,
       inited: true,
@@ -33,6 +34,14 @@ export default {
       });
     },
     getSwiperList() {
+      getSwiperList(1)
+        .then((res) => {
+          const data = res.data;
+          if (Number(data.code) === 10000) {
+            this.swiperList = res.data.result;
+          }
+        })
+        .catch(error => error);
       // this.swiper = new LoadData(Vue.ClientUrl.getSwiperList, {
       //   type: 4,
       //   limit: 8,
@@ -56,5 +65,8 @@ export default {
       // });
       // return this.news.getList();
     },
+  },
+  created() {
+    this.fetchData();
   },
 };

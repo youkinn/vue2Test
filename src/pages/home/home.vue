@@ -4,7 +4,7 @@
     <div class="hotGame section">
       <header-component s-title="热门游戏" s-link-text="进入游戏中心" :o-router="{name: 'personal'}"></header-component>
       <div class="swiper-contanier">
-        <slider-component :arr-swiper-list="this.swiper.list"></slider-component>
+        <slider-component :arr-swiper-list="this.swiperList"></slider-component>
       </div>
       <div class="hr"></div>
       <hot-game-component></hot-game-component>

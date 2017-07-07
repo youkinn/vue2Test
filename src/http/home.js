@@ -6,12 +6,12 @@ import { apiType, apiTypeArr } from '../config';
  *
  * @export
  * @param {number} page 页码
- * @param {any} limit 每页返回数据条数
- * @param {any} type 类型
- * @param {any} nologin 是否需要登陆
+ * @param {number} limit 每页返回数据条数
+ * @param {number} type 类型
+ * @param {number} nologin 是否需要登陆
  * @returns
  */
-export function getSwiperList(page, limit, type, nologin) {
+export function getSwiperList(page, limit = 8, type = 4, nologin = 1) {
   return axios.get(apiTypeArr[apiType].getSwiperList, {
     params: {
       page,

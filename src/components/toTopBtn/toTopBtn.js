@@ -1,3 +1,6 @@
+import { device } from '../../util/mall';
+
+const isWindows = device().isWindows;// 浏览器是否为windows系统
 export default {
   props: {
     nDistance: {
@@ -18,7 +21,7 @@ export default {
   },
   methods: {
     controlDisplay() {
-      this.show = !!(!mallUtils.device.isWindows && document.body.scrollTop > 200);
+      this.show = !!(!isWindows && document.body.scrollTop > 200);
     },
     goToTop() {
       window.scrollTo(0, 0);

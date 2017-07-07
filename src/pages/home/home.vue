@@ -1,7 +1,7 @@
 <template>
   <div class="container" v-if="inited">
     <app-header-component s-title="首页"></app-header-component>
-    <!--<div class="hotGame section">
+    <div class="hotGame section">
       <header-component s-title="热门游戏" s-link-text="进入游戏中心" :o-router="{name: 'personal'}"></header-component>
       <div class="swiper-contanier">
         <slider-component :arr-swiper-list="this.swiper.list"></slider-component>
@@ -9,7 +9,7 @@
       <div class="hr"></div>
       <hot-game-component></hot-game-component>
     </div>
-    <div class="hotNews section">
+    <!--<div class="hotNews section">
       <div class="hotNewsContainer">
         <hot-news-component :o-news="news"></hot-news-component>
       </div>

@@ -69,6 +69,8 @@ export default {
     },
     /**
      * 获取banner图片
+     *
+     * @returns
      */
     getSwiperList() {
       getSwiperList(1)

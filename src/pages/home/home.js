@@ -1,3 +1,5 @@
+import { Swipe, SwipeItem } from 'mint-ui';
+import Vue from 'vue';
 import appHeaderComponent from '../../components/header/header.vue';
 import fadingCircleCompontent from '../../components/fadingCircle/fadingCircle.vue';
 import appFooterComponent from '../../components/footer/footer.vue';
@@ -6,6 +8,9 @@ import headerComponent from './header.vue';
 import sliderComponent from './slider.vue';
 import hotGameComponent from './hotGame.vue';
 import { getSwiperList } from '../../http/home';
+
+Vue.component(Swipe.name, Swipe);
+Vue.component(SwipeItem.name, SwipeItem);
 
 export default {
   components: {

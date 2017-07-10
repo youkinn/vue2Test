@@ -1,4 +1,10 @@
-import { device } from '../../util/mall';
+<template>
+  <div class="action-button" v-show="show" @click.stop.prevent="goToTop" :style="{'bottom': nDistance + 'px'}">
+    <i class="icon icon-top"></i>
+  </div>
+</template>
+<script>
+import { device } from '../util/mall';
 
 const isWindows = device().isWindows;// 浏览器是否为windows系统
 export default {
@@ -28,3 +34,23 @@ export default {
     },
   },
 };
+</script>
+<style lang="scss" scoped>
+.action-button {
+  position: fixed;
+  right: 30px;
+  bottom: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  opacity: 0.4;
+  color: #fff;
+  background-color: #000;
+  i {
+    font-size: 40px;
+  }
+}
+</style>

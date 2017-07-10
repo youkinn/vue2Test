@@ -29,10 +29,10 @@
 <script>
 import { Swipe, SwipeItem } from 'mint-ui';
 import Vue from 'vue';
-import appHeaderComponent from '../../components/header/header.vue';
-import fadingCircleCompontent from '../../components/fadingCircle/fadingCircle.vue';
-import appFooterComponent from '../../components/footer/footer.vue';
-import backToTopComponent from '../../components/toTopBtn/toTopBtn.vue';
+import appHeaderComponent from '../../components/header';
+import fadingCircleCompontent from '../../components/fadingCircle';
+import appFooterComponent from '../../components/footer';
+import backToTopComponent from '../../components/toTopBtn';
 import headerComponent from './header';
 import sliderComponent from './slider';
 import hotGameComponent from './hotGame';

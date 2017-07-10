@@ -8,9 +8,10 @@
           "browsers": [
             "> 1%",
             "last 2 versions",
-            "iOS >= 7",
+            "IOS >= 7",
             "Android >= 2.3",
-            "IE >= 7"
+            "IE >= 10",
+            "not ie <= 8"
           ]
         }
       }

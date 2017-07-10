@@ -16,10 +16,10 @@
       <hot-game-component></hot-game-component>
     </div>
     <!--<div class="hotNews section">
-          <div class="hotNewsContainer">
-            <hot-news-component :o-news="news"></hot-news-component>
-          </div>
-        </div>-->
+            <div class="hotNewsContainer">
+              <hot-news-component :o-news="news"></hot-news-component>
+            </div>
+          </div>-->
     <back-to-top-component></back-to-top-component>
     <app-footer-component></app-footer-component>
   </div>
@@ -67,6 +67,9 @@ export default {
         this.inited = true;
       });
     },
+    /**
+     * 获取banner图片
+     */
     getSwiperList() {
       getSwiperList(1)
         .then((res) => {

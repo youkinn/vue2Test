@@ -1,4 +1,4 @@
-import axios from './http';
+import ajax from './http';
 import { apiType, apiTypeArr } from '../config';
 
 /**
@@ -12,7 +12,9 @@ import { apiType, apiTypeArr } from '../config';
  * @returns
  */
 export function getSwiperList(page, limit = 8, type = 4, nologin = 1) {
-  return axios.get(apiTypeArr[apiType].getSwiperList, {
+  return ajax({
+    url: apiTypeArr[apiType].getSwiperList,
+    method: 'get',
     params: {
       page,
       limit,

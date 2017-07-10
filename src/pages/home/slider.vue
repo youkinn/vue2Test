@@ -9,5 +9,14 @@
     <div class="swiper-pagination"></div>
   </div>
 </template>
-<script src="./slider.js"></script>
-<style lang="scss" scoped src="./slider.scss"></style>
+<script>
+export default {
+  props: {
+    arrSwiperList: {
+      type: Array,
+      default: () => [],
+    },
+  },
+};
+</script>
+<style lang="scss" scoped></style>

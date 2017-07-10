@@ -34,6 +34,7 @@
 * 不使用在index.html中全局引入第三方js,全部使用webpack打包
 * 使用了es6-promise,以便兼容老浏览器
 * 使用第三方ui框架，mint-ui 2.2.7版本，都采用按需加载的方式使用
+* 参考[vux](https://github.com/airyland/vux/blob/v2/src/plugins/confirm/index.js),使用插件化弹出框与弹出层
 
 ## 项目要求
 * Android 4+
